@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css cdn  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bgs-nav": "linear-gradient(0deg, #ff7f50, #1e90ff);",
+              btns: "rgba(171, 239, 95, 1);",
+              "nav-bgs":
+                " linear-gradient(0.00deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0) 100%);",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="manrope">
+    <!-- header  -->
+    <header class="md:container mx-auto">
+      <!-- navber  -->
+      <nav class="bg-nav-bgs">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-10 50 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <img
+              src="https://api.iconify.design/ph/arrow-right-thin.svg"
+              alt="Arrow"
+              class="-rotate-45 w-6 h-6 md:w-8 md:h-8 bg-btns hidden md:flex rounded-full"
+            />
+            <a class="font-bold text-xl md:text-2xl">Rinterio</a>
+          </div>
+          <!-- ul li  -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="font-bold">Home</a></li>
+              <li><a class="text-gray-500">Service</a></li>
+              <li><a class="text-gray-500">Portfolio</a></li>
+              <li><a class="text-gray-500">Blog</a></li>
+              <li><a class="text-gray-500">Contact</a></li>
+            </ul>
+          </div>
+          <!-- btn -->
+          <div class="navbar-end">
+            <img
+              src="https://api.iconify.design/ph/magnifying-glass-thin.svg"
+              alt="Search"
+              class="w-6 h-6 md:w-8 md:h-8 shadow bg-white rounded-full"
+            />
+            <img
+              src="https://api.iconify.design/ph/shopping-cart-simple-thin.svg"
+              alt="Cart"
+              class="w-6 h-6 md:w-8 md:h-8 mx-1 sm:mx-4 shadow bg-white rounded-full"
+            />
+            <a class="btn bg-btns p-2 my-2"
+              >Book Consult
+              <img
+                src="https://api.iconify.design/ph/arrow-right-thin.svg"
+                alt="Arrow"
+                class="-rotate-45 w-6 h-6 md:w-8 md:h-8 hidden md:flex rounded-full"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- part of header  -->
+      <div class="flex flex-col justify-center items-center">
+        <div><img src="assets/banner.png" alt="" /></div>
+        <div class="md:w-4/5 flex flex-col justify-center items-center">
+          <h1
+            class="font-bold my-4 text-center text-3xl md:text-4xl xl:text-6xl"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="m-4 text-center">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <a class="btn bg-btns m-4 p-2 w-4/5 md:w-48 rounded-3xl"
+            >View Details
+            <img
+              src="https://api.iconify.design/ph/arrow-right-thin.svg"
+              alt="Arrow"
+              class="-rotate-45 w-6 h-6 md:w-8 md:h-8 rounded-full"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- main  -->
+    <main>
+      <!-- hero -->
+      <div class="hero bg-base-200">
+        <div class="hero-content flex-col md:gap-8 xl:gap-24 lg:flex-row">
+          <!-- card+  -->
+          <div class="flex flex-col gap-10 md:w-[90%]">
+            <div class="text-center lg:text-start">
+              <img src="assets/Vector.png" alt="" />
+              <a class="btn bg-white m-4 p-2 w-36 rounded-3xl"
+                ><img
+                  src="https://api.iconify.design/ph/arrow-right-thin.svg"
+                  alt="Arrow"
+                  class="w-5 h-5 md:w-6 md:h-6 rounded-full"
+                />
+                About Us
+              </a>
+              <h1 class="font-bold text-2xl md:text-3xl xl:text-5xl">
+                We design thoughtful, liveable spaces
+              </h1>
+              <br />
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+            </div>
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+              <!-- Commercial Card -->
+              <div class="card bg-base-100 shadow-md p-4">
+                <div class="flex items-center gap-4">
+                  <div class="text-6xl">🏢</div>
+                  <!-- icon -->
+                  <div>
+                    <h2 class="font-bold text-lg">Commercial</h2>
+                    <p>
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Residential Card -->
+              <div class="card bg-base-100 shadow-md p-4">
+                <div class="flex items-center gap-4">
+                  <div class="text-6xl">🏠</div>
+                  <!-- icon -->
+                  <div>
+                    <h2 class="font-bold text-lg">Residential</h2>
+                    <p>
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/Rectangle.png"
+            class="md:w-[90%] rounded-lg shadow-2xl"
+          />
+        </div>
+      </div>
+    </main>
+    <!-- footer  -->
+    <footer></footer>
+  </body>
+</html>
